@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Collinwood Campus · 12610 E. 131st St. | FixOurStreets216</title>
+<meta name="description" content="Collinwood – 12610 E. 131st St. Data, Manufacturing, Power Generation, Hydrogen and Corporate Park campus. Concept master plan, renderings and program by The FixOurStreets216 Project.">
+<link rel="icon" href="img/fos216-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0b1013; --panel:#141c21; --panel2:#1a252b; --line:#2f3f48;
+  --orange:#E1560F; --orange2:#FF6A1A; --teal2:#19C3B2; --gold:#E3B341;
+  --ink:#e8eef1; --mut:#9fb2bb;
+  --hs:#8E949B; --mfg:#ABAFB4; --tur:#5C7BE0; --swy:#E8792B; --bess:#2FA866; --cool:#19A7A7;
+  --elz:#19C3E6; --cmp:#8FA6E6; --sto:#A9D8F5; --fib:#FF3FA8; --pwr:#F2C200; --h2:#3D8BFF; --wat:#7FDCCF; --heat:#E5484D;
+  --sans:Archivo,"Helvetica Neue",Arial,sans-serif; --mono:"JetBrains Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.55}
+img{max-width:100%;display:block}
+a{color:var(--teal2)}a:hover{color:#6FE6D9}
+.band{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;background:#501313;border-bottom:2px solid var(--orange);padding:8px 18px;font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:#f5c4b3}
+.band b{color:#fff}
+.wrap{max-width:1280px;margin:0 auto;padding:0 20px}
+header.top{display:flex;align-items:center;gap:22px;padding:26px 0 18px;flex-wrap:wrap}
+header.top img{width:112px;height:112px;object-fit:contain;flex-shrink:0}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--teal2);text-transform:uppercase}
+h1{font-size:clamp(28px,4.4vw,50px);line-height:1.03;margin:6px 0 8px;font-weight:800;letter-spacing:-.015em}
+h1 em{font-style:normal;color:var(--orange2)}
+.uses{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.uses span{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;border:1px solid var(--line);background:var(--panel);padding:5px 10px}
+.notice{border:1px solid var(--gold);border-left-width:6px;background:#1c1708;color:#f1e3b5;padding:12px 16px;margin:0 0 22px;font-size:14px}
+.notice b{color:#fff}
+nav.toc{position:sticky;top:0;z-index:20;background:rgba(11,16,19,.94);backdrop-filter:blur(6px);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+nav.toc .wrap{display:flex;gap:4px;overflow-x:auto;padding-top:6px;padding-bottom:6px;scrollbar-width:thin;scrollbar-color:#2f3f48 transparent}
+nav.toc .wrap::-webkit-scrollbar{height:4px}nav.toc .wrap::-webkit-scrollbar-thumb{background:#2f3f48}
+nav.toc a{font-family:var(--mono);font-size:11.5px;letter-spacing:.06em;color:var(--mut);text-decoration:none;padding:8px 10px;white-space:nowrap;border-radius:4px}
+nav.toc a:hover{color:var(--ink);background:var(--panel)}
+.hero{position:relative;margin:22px 0 0;border:1px solid var(--line)}
+.hero img{width:100%;height:auto;cursor:zoom-in}
+.hero figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 18px 14px;background:linear-gradient(transparent,rgba(0,0,0,.82));font-size:13px;color:#d9e3e7}
+.tb{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));border:1px solid var(--line);border-top:0;background:var(--panel)}
+.tb div{padding:10px 14px;border-right:1px solid var(--line);border-top:1px solid var(--line)}
+.tb small{display:block;font-family:var(--mono);font-size:9.5px;letter-spacing:.12em;color:var(--teal2)}
+.tb span{font-family:var(--mono);font-size:12.5px}
+section{padding-top:18px}
+h2{font-size:13px;font-family:var(--mono);letter-spacing:.16em;color:var(--teal2);border-bottom:1px solid var(--line);padding-bottom:8px;margin:48px 0 6px;text-transform:uppercase;scroll-margin-top:64px}
+.lead{color:var(--mut);max-width:880px;margin:10px 0 18px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px;margin-top:18px}
+.kpi{background:var(--panel);border:1px solid var(--line);padding:14px 16px}
+.kpi b{display:block;font-size:27px;font-weight:800;letter-spacing:-.01em;line-height:1.1}
+.kpi span{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--mut)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--c,var(--orange));padding:14px 16px}
+.card .k{font-family:var(--mono);font-size:10px;letter-spacing:.12em;color:var(--c,var(--orange))}
+.card h3{margin:2px 0 4px;font-size:18px}
+.card p{margin:6px 0 0;color:var(--mut);font-size:13.5px}
+.card ul{margin:8px 0 0;padding-left:18px;color:var(--mut);font-size:13.5px}
+.card .num{font-family:var(--mono);font-size:12px;margin-top:10px;border-top:1px dashed var(--line);padding-top:8px}
+.flag{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.08em;color:#1a1306;background:var(--gold);padding:2px 6px;margin-left:6px;vertical-align:middle}
+.tablewrap{overflow-x:auto;border:1px solid var(--line);background:var(--panel)}
+table{width:100%;border-collapse:collapse;font-size:13.5px}
+th{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;color:var(--teal2);text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);background:var(--panel2);white-space:nowrap}
+td{padding:8px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+td.n,th.n{text-align:right;font-family:var(--mono);white-space:nowrap}
+td.id{font-family:var(--mono);white-space:nowrap}
+tr.tot td{font-weight:700;background:var(--panel2)}
+.sw{display:inline-block;width:11px;height:11px;margin-right:7px;vertical-align:-1px;background:var(--c)}
+.split{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:18px;align-items:start}
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
+.gal.big{grid-template-columns:repeat(auto-fill,minmax(380px,1fr))}
+.gal figure{margin:0;background:var(--panel);border:1px solid var(--line)}
+.gal button{all:unset;display:block;cursor:zoom-in;width:100%}
+.gal button:focus-visible{outline:3px solid var(--orange2);outline-offset:2px}
+.gal img{width:100%;aspect-ratio:16/9;object-fit:cover}
+.gal.plans img{aspect-ratio:20/13;object-fit:contain;background:#ECEBE7}
+.gal figcaption{padding:9px 12px 11px;font-size:13px}
+.gal figcaption b{display:block;font-size:13.5px}
+.gal figcaption span{color:var(--mut);font-size:12.5px}
+h3.sub{font-family:var(--mono);font-size:11.5px;letter-spacing:.14em;color:var(--orange2);margin:26px 0 10px;text-transform:uppercase}
+.gate{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;margin-bottom:18px}
+.gate-h{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin:22px 0 8px}
+.gate-h b{font-family:var(--mono);font-size:22px;color:var(--orange2)}
+.gate-h span{color:var(--mut);font-size:14px}
+.phases{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:12px}
+.phase{background:var(--panel);border:1px solid var(--line);padding:14px 16px}
+.phase .k{font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--orange2)}
+.phase h3{margin:2px 0 6px;font-size:17px}
+.phase p{margin:0;color:var(--mut);font-size:13.5px}
+.calc{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:14px}
+.calc .box{background:var(--panel);border:1px solid var(--line);padding:14px 16px}
+.calc label{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:6px 0;border-bottom:1px dashed var(--line);font-size:13.5px}
+.calc input{width:86px;background:var(--bg);color:var(--ink);border:1px solid var(--line);padding:7px 8px;font-family:var(--mono);font-size:13px;min-height:36px}
+.calc input:focus-visible{outline:2px solid var(--orange2)}
+.calc h3{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--teal2);margin:0 0 6px}
+.note{font-size:12.5px;color:var(--mut);margin-top:10px}
+ul.list{margin:8px 0 0;padding-left:20px;color:var(--mut)}
+ul.list li{margin:6px 0}
+ul.list b{color:var(--ink)}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px}
+.two .box{background:var(--panel);border:1px solid var(--line);padding:14px 18px}
+.two h3{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--teal2);margin:0}
+footer{margin-top:60px;border-top:2px solid var(--orange);background:#070a0c}
+footer .wrap{display:flex;align-items:center;gap:18px;padding:22px 20px;flex-wrap:wrap;font-family:var(--mono);font-size:11.5px;color:var(--mut)}
+footer img{width:56px;height:56px}
+dialog{border:1px solid var(--line);background:#05080a;color:var(--ink);padding:0;max-width:min(1600px,96vw);width:96vw}
+dialog::backdrop{background:rgba(0,0,0,.85)}
+dialog img{width:100%;height:auto;max-height:80vh;object-fit:contain;background:#000}
+dialog .bar{display:flex;justify-content:space-between;align-items:center;gap:12px;padding:10px 14px;flex-wrap:wrap}
+dialog .bar b{font-size:14px}
+dialog .bar span{color:var(--mut);font-size:12.5px}
+dialog button{font:inherit;font-weight:600;background:var(--orange);color:#fff;border:0;padding:9px 16px;min-height:40px;cursor:pointer}
+dialog a.orig{font-family:var(--mono);font-size:12px}
+@media (max-width:860px){.split,.calc,.gate{grid-template-columns:1fr}header.top img{width:84px;height:84px}.gal.big{grid-template-columns:1fr}}
+@media print{nav.toc,dialog{display:none}body{background:#fff;color:#000}}
+</style>
+</head>
+<body>
+<div class="band"><span><b>CONCEPTUAL INFORMATION ONLY</b></span><span>NOT A PROPOSAL, APPROVAL OR ENGINEERED DESIGN</span><span>fixourstreets216.com</span></div>
+
+<div class="wrap">
+<header class="top">
+<img src="img/fos216-logo.png" alt="FOS 216 hexagon logo: Neighborhoods First, #WeThePeople">
+<div>
+<div class="eyebrow">The FixOurStreets216 Project · Collinwood, Cleveland, Ohio</div>
+<h1>Collinwood · <em>12610 E. 131st St.</em></h1>
+<div class="uses"><span>DATA</span><span>MANUFACTURING</span><span>POWER GENERATION</span><span>HYDROGEN</span><span>CORPORATE PARK</span></div>
+</div>
+</header>
+<aside class="notice" role="note"><b>Conceptual information only.</b> This page shares an early planning concept by The FixOurStreets216 Project to support community discussion. It is not a development proposal, a commitment by any owner, agency or company, or an engineered or approved design. Building sizes, capacities and layouts are planning-level assumptions; renderings are AI-generated illustrations.</aside>
+</div>
+
+<nav class="toc" aria-label="Sections"><div class="wrap">
+<a href="#overview">Overview</a><a href="#campuses">Campuses</a><a href="#plan">Master plan</a><a href="#buildings">Buildings</a><a href="#power">Power + heat</a><a href="#hydrogen">Hydrogen</a><a href="#infrastructure">Infrastructure</a><a href="#security">Security gates</a><a href="#jobs">Jobs</a><a href="#renderings">Renderings</a><a href="#phasing">Phasing</a><a href="#calculator">Calculator</a><a href="#site">Site facts</a><a href="#open">Open items</a><a href="#about">About</a>
+</div></nav>
+
+<div class="wrap">
+
+<!-- ================= OVERVIEW ================= -->
+<section id="overview">
+<figure class="hero">
+<img src="img/aerial-aerial-cinematic-view-with-hrsgs-assumed.jpg" alt="Golden-hour aerial of the campus: three data halls along Kirby Ave, manufacturing buildings, power plant with heat recovery units and stacks, hydrogen plant and rail spur" data-title="Aerial cinematic view · with HRSGs (assumed)">
+<figcaption>A 34-acre brownfield at Kirby Ave, Coit Rd and E. 131st St., planned as one secured campus: hyperscale data halls, advanced manufacturing, a 300 MW power plant, hydrogen production and a corporate park, served by an on-site rail spur. AI-generated illustration guided by the master plan geometry.</figcaption>
+</figure>
+<div class="tb">
+<div><small>PROJECT</small><span>Collinwood Multi-Campus</span></div>
+<div><small>ADDRESS</small><span>12610 E. 131st St., Cleveland OH</span></div>
+<div><small>PARCEL</small><span>33.96 ac traced · ~35 ac reported</span></div>
+<div><small>STATUS</small><span>Conceptual information only</span></div>
+<div><small>DATE</small><span>October 2026</span></div>
+</div>
+
+<h2>Overview</h2>
+<p class="lead">The FixOurStreets216 concept for the former National Acme and Republic Steel ground in Collinwood. It puts hyperscale data halls, the factories that build their equipment, the power plant and hydrogen production that run them, and a public-facing corporate park inside one fence line. Every figure on this page is a planning-level assumption traced from imagery (±3–5 m), not survey or engineering.</p>
+<div class="kpis">
+<div class="kpi"><b>33.96 ac</b><span>PARCEL · 137,429 M² (IMAGE TRACE)</span></div>
+<div class="kpi"><b>2.05M sf</b><span>GROSS FLOOR AREA · 6 BUILDINGS</span></div>
+<div class="kpi"><b>300 MW</b><span>ON-SITE GENERATION · 6 × 50 MW</span></div>
+<div class="kpi"><b>400 MWh</b><span>BATTERY STORAGE · 100 MW</span></div>
+<div class="kpi"><b>7,385 kg/d</b><span>HYDROGEN · 16 MW PEM ELECTROLYSIS</span></div>
+<div class="kpi"><b>1,728f</b><span>INNER FIBER RING · 864F OUTER RING</span></div>
+<div class="kpi"><b>326 m</b><span>ON-SITE RAIL SPUR · TRANSLOAD YARD</span></div>
+<div class="kpi"><b>4 gates</b><span>STAFFED CHECKPOINTS · G1–G4</span></div>
+<div class="kpi"><b>~1,100 jobs</b><span>PERMANENT · CAMPUS RUNS 24/7</span></div>
+</div>
+</section>
+
+<!-- ================= CAMPUSES ================= -->
+<section id="campuses">
+<h2>1 · The campuses</h2>
+<p class="lead">Campuses A–C and the power plant are laid out in the master plan. Campus D, the corporate park, comes from an earlier version of the concept and still needs a place in the current layout (see Open items).</p>
+<div class="cards">
+<div class="card" style="--c:var(--hs)"><div class="k">CAMPUS A · NORTH PAD</div><h3>Hyperscale Data Campus</h3><p>Three long data halls on the largest flat, already-cleared pad, parallel to Kirby Ave, with rooftop mechanical yards facing Kirby and the rail corridor, away from the neighborhoods.</p><div class="num">3 halls · 5–6 stories · 1,196,539 sf GFA · closed-loop chilled water</div></div>
+<div class="card" style="--c:var(--tur)"><div class="k">CAMPUS B · EAST END</div><h3>Power Generation</h3><p>300 MW hydrogen-capable gas turbines, a 138 / 34.5 kV switchyard, 100 MW / 400 MWh battery storage and a cooling corridor, kept at the far end from the Kirby Ave front door.</p><div class="num">300 MW · 400 MWh BESS · heat recovery assumed</div></div>
+<div class="card" style="--c:var(--elz)"><div class="k">CAMPUS B · EAST END</div><h3>Hydrogen Production</h3><p>A PEM electrolyzer hall, a compression building and a tube-trailer storage yard, piped to the turbine fuel header, the factories and an export stub on E. 131st St.</p><div class="num">16 MW · 7,385 kg H₂/day · 350 bar</div></div>
+<div class="card" style="--c:var(--mfg)"><div class="k">CAMPUS C · CENTER + SOUTH</div><h3>Advanced Manufacturing</h3><p>Data-center supply chain: switchgear, power skids, cooling skids, containerized IT modules and electrolyzer stacks, built next to the power campus and shipped by rail.</p><div class="num">3 buildings · 5–6 stories · 854,613 sf GFA · rail dock</div></div>
+<div class="card" style="--c:var(--orange)"><div class="k">CAMPUS D · SOUTHWEST WEDGE</div><h3>Corporate Park &amp; Workforce Hub <span class="flag">EARLIER CONCEPT</span></h3><p>Offices, a 5,000 sq ft food hall and a training center on the Kirby Ave / I-90 ramp side, with its own gate: the public front door of the campus.</p><div class="num">Not yet in the current layout · see Open items</div></div>
+</div>
+</section>
+
+<!-- ================= MASTER PLAN ================= -->
+<section id="plan">
+<h2>2 · Master plan set</h2>
+<p class="lead">Six concept sheets drawn from the campus layout, plus the earlier full-plan and combined-final versions. Select any sheet to enlarge it.</p>
+<div class="gal plans" id="gal-plans"></div>
+<h3 class="sub">Site as it stands today</h3>
+<div class="card" style="--c:var(--gold)"><div class="k">EXISTING CONDITIONS</div><h3>A vacant, graded brownfield</h3><p>The parcel is open ground today: a bare, graded north pad, an open grass middle strip and an irregular southwest wedge. The container storage yard to the south and the buildings across Kirby Ave are outside the parcel.</p><ul><li>I-90 and two rail corridors to the northwest</li><li>Cleveland Short Line rail east of E. 131st St.</li><li>Taft Ave and older industrial buildings to the south</li></ul></div>
+</section>
+
+<!-- ================= BUILDINGS ================= -->
+<section id="buildings">
+<h2>3 · Building schedule</h2>
+<div class="tablewrap"><table>
+<thead><tr><th>ID</th><th>Name</th><th>Use</th><th class="n">Levels</th><th class="n">Height</th><th class="n">Footprint</th><th class="n">GFA (sf)</th></tr></thead>
+<tbody>
+<tr><td class="id"><span class="sw" style="--c:var(--hs)"></span>HS-1</td><td>Hyperscale Building A · Data Hall 1</td><td>Hyperscale data</td><td class="n">6</td><td class="n">36 m</td><td class="n">6,576 m²</td><td class="n">424,732</td></tr>
+<tr><td class="id"><span class="sw" style="--c:var(--hs)"></span>HS-2</td><td>Hyperscale Building B · Data Hall 2</td><td>Hyperscale data</td><td class="n">6</td><td class="n">36 m</td><td class="n">6,575 m²</td><td class="n">424,645</td></tr>
+<tr><td class="id"><span class="sw" style="--c:var(--hs)"></span>HS-3</td><td>Hyperscale Building C · Data Hall 3</td><td>Hyperscale data</td><td class="n">5</td><td class="n">30 m</td><td class="n">6,450 m²</td><td class="n">347,162</td></tr>
+<tr><td class="id"><span class="sw" style="--c:var(--mfg)"></span>MFG-1</td><td>Manufacturing Building A</td><td>Switchgear, power skids, modular data-center assembly · rail dock</td><td class="n">6</td><td class="n">42 m</td><td class="n">4,879 m²</td><td class="n">315,092</td></tr>
+<tr><td class="id"><span class="sw" style="--c:var(--mfg)"></span>MFG-2</td><td>Manufacturing Building B</td><td>Cooling skids, containerized IT modules · rail dock</td><td class="n">5</td><td class="n">35 m</td><td class="n">4,642 m²</td><td class="n">249,803</td></tr>
+<tr><td class="id"><span class="sw" style="--c:var(--mfg)"></span>MFG-3</td><td>Manufacturing Building C (L-shaped)</td><td>Electrolyzer stack and fuel-cell components · truck only</td><td class="n">5</td><td class="n">35 m</td><td class="n">5,383 m²</td><td class="n">289,718</td></tr>
+<tr><td class="id"><span class="sw" style="--c:var(--tur)"></span>PWR-TUR</td><td>Turbine Hall</td><td>6 × 50 MW gas turbines</td><td class="n">1</td><td class="n">24 m</td><td class="n">3,720 m²</td><td class="n">—</td></tr>
+<tr><td class="id"><span class="sw" style="--c:var(--elz)"></span>H2-ELZ</td><td>Electrolyzer Hall</td><td>16 MW PEM electrolysis</td><td class="n">2</td><td class="n">14 m</td><td class="n">2,537 m²</td><td class="n">—</td></tr>
+<tr><td class="id"><span class="sw" style="--c:var(--cmp)"></span>H2-CMP</td><td>Compression Building</td><td>Compression to 350 bar</td><td class="n">1</td><td class="n">10 m</td><td class="n">1,409 m²</td><td class="n">—</td></tr>
+<tr class="tot"><td colspan="5">Total buildings</td><td class="n">42,171 m²</td><td class="n">2,051,152</td></tr>
+</tbody></table></div>
+<p class="note">Open yards (not buildings): switchyard 2,480 m², battery storage 1,916 m², cooling corridor 1,278 m², hydrogen storage yard 1,456 m², rail transload yard 6,264 m², manufacturing rail dock 2,893 m². Hyperscale floor-to-floor 6 m; manufacturing 7 m.</p>
+</section>
+
+<!-- ================= POWER ================= -->
+<section id="power">
+<h2>4 · Power generation + heat recovery</h2>
+<div class="cards">
+<div class="card" style="--c:var(--tur)"><div class="k">PWR-TUR · TURBINE HALL</div><h3>300 MW gas turbines</h3><p>Six 50 MW hydrogen-capable aeroderivative gas turbines (assumed), burning a natural gas / hydrogen blend.</p><div class="num">24 m tall · 3,720 m²</div></div>
+<div class="card" style="--c:var(--swy)"><div class="k">PWR-SWY · SWITCHYARD</div><h3>138 / 34.5 kV</h3><p>Interconnect to Cleveland Public Power or the utility transmission system; route still to be set.</p><div class="num">2,480 m² · voltages assumed</div></div>
+<div class="card" style="--c:var(--bess)"><div class="k">PWR-BESS · BATTERY STORAGE</div><h3>100 MW / 400 MWh</h3><p>Lithium iron phosphate (assumed) containers for firming, ride-through and peak shaving.</p><div class="num">1,916 m²</div></div>
+<div class="card" style="--c:var(--cool)"><div class="k">PWR-COOL · COOLING CORRIDOR</div><h3>Fin-fans + absorption chillers</h3><p>Air-cooled condensers and fin-fan coolers, plus absorption chillers driven by turbine waste heat, feeding the data-hall chilled-water loop.</p><div class="num">1,278 m²</div></div>
+</div>
+<h3 class="sub">Heat recovery (HRSG) <span class="flag">ASSUMED</span></h3>
+<div class="split">
+<div class="gal big" id="gal-hrsg" style="grid-template-columns:1fr"></div>
+<div class="card" style="--c:var(--heat)"><div class="k">COMBINED HEAT AND POWER · PROPOSED</div><h3>One HRSG per turbine</h3><p>The base layout has no HRSG, but the cooling corridor's "absorption chillers on turbine waste heat" needs one. The proposal places six outdoor heat recovery steam generators in the east half of the turbine hall footprint, each with its own 38 m exhaust stack. Recovered heat runs in a red-banded pipe rack to the absorption chillers that cool the data halls.</p><ul><li>Main proposal: CHP. HRSG hot water or low-pressure steam drives absorption chillers.</li><li>Alternative: full combined cycle with a steam turbine, which would need its own building (rendering below).</li><li>The reclaimed-heat corridor in the plan legend is reserved for this pipe rack.</li></ul></div>
+</div>
+</section>
+
+<!-- ================= HYDROGEN ================= -->
+<section id="hydrogen">
+<h2>5 · Hydrogen production</h2>
+<div class="cards">
+<div class="card" style="--c:var(--elz)"><div class="k">H2-ELZ · ELECTROLYZER HALL</div><h3>16 MW PEM</h3><p>7,385 kg of hydrogen per day at about 52 kWh/kg, fed by demineralised water on UT-W-2, roughly 19,500 gal/day at about 10 L per kg.</p><div class="num">2 levels · 14 m · 2,537 m²</div></div>
+<div class="card" style="--c:var(--cmp)"><div class="k">H2-CMP · COMPRESSION</div><h3>350 bar</h3><p>Feeds the storage yard and the turbine fuel header.</p><div class="num">10 m · 1,409 m²</div></div>
+<div class="card" style="--c:var(--sto)"><div class="k">H2-STO · STORAGE YARD</div><h3>Tube trailers + vessels</h3><p>Ground tube trailers and pressure vessels. NFPA 2 setbacks are not yet sized; confirm them with the fire marshal.</p><div class="num">1,456 m²</div></div>
+</div>
+<div class="tablewrap" style="margin-top:14px"><table>
+<thead><tr><th>Pipeline</th><th>Route</th><th class="n">Size</th><th class="n">Length</th></tr></thead>
+<tbody>
+<tr><td class="id"><span class="sw" style="--c:var(--h2)"></span>H2-PIPE-1</td><td>Electrolyzer → compression</td><td class="n">DN150</td><td class="n">8 m</td></tr>
+<tr><td class="id"><span class="sw" style="--c:var(--h2)"></span>H2-PIPE-2</td><td>Compression → storage</td><td class="n">DN100</td><td class="n">7 m</td></tr>
+<tr><td class="id"><span class="sw" style="--c:var(--h2)"></span>H2-PIPE-3 / UT-H2-1</td><td>Storage → turbine fuel header</td><td class="n">DN200</td><td class="n">136 m</td></tr>
+<tr><td class="id"><span class="sw" style="--c:var(--h2)"></span>UT-H2-2</td><td>Supply to manufacturing (fuel cells, process)</td><td class="n">DN80</td><td class="n">46 m</td></tr>
+<tr><td class="id"><span class="sw" style="--c:var(--h2)"></span>H2-PIPE-4 / UT-H2-3</td><td>Export / offtake stub to E. 131st St.</td><td class="n">DN200</td><td class="n">65 m</td></tr>
+</tbody></table></div>
+</section>
+
+<!-- ================= INFRASTRUCTURE ================= -->
+<section id="infrastructure">
+<h2>6 · Infrastructure</h2>
+<h3 class="sub">Utility corridors · 2,355 m</h3>
+<div class="tablewrap"><table>
+<thead><tr><th>ID</th><th>Type</th><th>Specification</th><th class="n">Length</th></tr></thead>
+<tbody>
+<tr><td class="id"><span class="sw" style="--c:var(--pwr)"></span>UT-P-1</td><td>Power</td><td>34.5 kV duct bank, switchyard → HS-2 / HS-1</td><td class="n">252 m</td></tr>
+<tr><td class="id"><span class="sw" style="--c:var(--pwr)"></span>UT-P-2</td><td>Power</td><td>34.5 kV duct bank, turbine hall → spine, manufacturing, HS-3</td><td class="n">413 m</td></tr>
+<tr><td class="id"><span class="sw" style="--c:var(--pwr)"></span>UT-P-3</td><td>Power</td><td>13.8 kV underground, south wedge / MFG-3</td><td class="n">72 m</td></tr>
+<tr><td class="id"><span class="sw" style="--c:var(--pwr)"></span>UT-P-4</td><td>Power</td><td>34.5 kV dedicated electrolyzer feeder</td><td class="n">107 m</td></tr>
+<tr><td class="id"><span class="sw" style="--c:var(--h2)"></span>UT-H2-1/2/3</td><td>Hydrogen</td><td>DN200 header, DN80 to manufacturing, DN200 export stub</td><td class="n">247 m</td></tr>
+<tr><td class="id"><span class="sw" style="--c:var(--wat)"></span>UT-W-1</td><td>Water</td><td>12 in ductile iron main from E. 131st St., potable + fire</td><td class="n">551 m</td></tr>
+<tr><td class="id"><span class="sw" style="--c:var(--wat)"></span>UT-W-2</td><td>Water</td><td>8 in demineralised feed to electrolyzer</td><td class="n">80 m</td></tr>
+<tr><td class="id"><span class="sw" style="--c:var(--wat)"></span>UT-CHW-1</td><td>Chilled water</td><td>2 × 30 in closed loop, cooling corridor → data-hall mechanical yards</td><td class="n">633 m</td></tr>
+<tr><td class="id"><span class="sw" style="--c:var(--heat)"></span>—</td><td>Reclaimed heat</td><td>Not in source data; reserved for the HRSG pipe rack</td><td class="n">—</td></tr>
+</tbody></table></div>
+<div class="two" style="margin-top:14px">
+<div class="box"><h3>FIBER BACKBONE · DUAL RING</h3><ul class="list"><li><b>Outer ring:</b> 864 fiber, 4 × 4 in duct bank, 1,862 m around the perimeter.</li><li><b>Inner ring:</b> 1,728 fiber, 6 × 4 in duct bank, 1,105 m linking the data halls and factories.</li><li>The rings run in opposite directions, so a single cut never isolates a building.</li><li>Laterals to all six buildings and the switchyard, plus ring ties; 269 m in total.</li><li>Diverse carrier entrances at G1 Coit Rd and G2 E. 131st St. Total route: 3,236 m.</li></ul></div>
+<div class="box"><h3>ROADS + RAIL</h3><ul class="list"><li><b>Campus spine</b> (G2 E. 131st St.): 14 m collector, 335 m.</li><li><b>West connector</b> to G3 Kirby Ave: 12 m, 244 m. <b>G1 Coit Rd entry:</b> 12 m, 54 m.</li><li><b>Service roads</b> (data halls, power / hydrogen, south wedge): 10 m, 584 m in total. Truck turns designed to a 15 m radius (WB-67).</li><li><b>Taft Ave connector</b> to G4: 103 m off-site; needs an easement or acquisition.</li><li><b>Rail:</b> 326 m on-site spur, 6,264 m² transload yard (inbound steel, transformers and switchgear; outbound modular data-center units), and a dock apron serving MFG-1 / MFG-2. The 140 m off-site link to the Cleveland Short Line needs a railroad agreement, an easement and an at-grade crossing of E. 131st St.</li></ul></div>
+</div>
+</section>
+
+<!-- ================= SECURITY ================= -->
+<section id="security">
+<h2>7 · Security gates + access</h2>
+<p class="lead">Every entrance is a staffed checkpoint: a glass guard booth on an island between the inbound and outbound lanes, an LED-lit canopy, drop-arm and crash-rated wedge barriers, anti-ram bollards, badge readers, license-plate and dome cameras, and a 2.4 m anti-climb mesh perimeter fence. Gate locations come from the road network; their roles are proposed.</p>
+<div id="gates"></div>
+</section>
+
+<!-- ================= JOBS ================= -->
+<section id="jobs">
+<h2>8 · Job creation · 24/7 operations</h2>
+<p class="lead">The campus never shuts down. Data halls, the power plant, hydrogen production, security and emergency response are staffed around the clock, and the factories run three shifts. Below is every permanent position the campus would need to fill, with approximate Cleveland-area pay.</p>
+<div class="kpis" id="jobs-kpis"></div>
+<div class="two" style="margin-top:14px">
+<div class="box"><h3>HOW 24/7 STAFFING IS COUNTED</h3><ul class="list">
+<li>A post staffed every hour of the year takes about <b>4.2 people</b>: 8,760 hours ÷ roughly 2,080 hours per full-time worker, on rotating 12-hour or three 8-hour shifts.</li>
+<li>Roles marked <b>24/7</b> are filled around the clock. <b>Day + on-call</b> roles cover nights and weekends by on-call rotation.</li>
+<li>Pay is base pay before benefits, overtime and shift differentials; night and weekend shifts usually earn more.</li>
+<li>Payroll uses the midpoint of each range; hourly roles are figured at 2,080 hours a year.</li>
+</ul></div>
+<div class="box"><h3>NOT COUNTED HERE</h3><ul class="list">
+<li><b>Construction jobs:</b> temporary, spread over several build phases.</li>
+<li><b>Corporate park office tenants:</b> if Campus D adds about 160,000 sf of offices, that could add roughly 450–550 more jobs, depending on tenants.</li>
+<li><b>Indirect and induced jobs</b> at suppliers, contractors and local businesses.</li>
+<li><b>Outside contractors</b> for major turbine overhauls, HRSG inspections and large data-hall fit-outs.</li>
+</ul></div>
+</div>
+<div id="jobs-tables"></div>
+<p class="note">Positions and headcounts are planning estimates based on typical staffing for facilities of this type and size. Pay ranges are approximate 2026 Cleveland-area figures; confirm them against current Bureau of Labor Statistics data for the Cleveland-Elyria metro area and actual employer offers. The earlier concept's calculator (below) uses simpler ratios and gives a different job count.</p>
+</section>
+
+<!-- ================= RENDERINGS ================= -->
+<section id="renderings">
+<h2>9 · Renderings</h2>
+<p class="lead">AI-generated illustrations (Adobe Firefly), each guided by a reference drawn from the master plan geometry. They show character and lighting, not engineered design. Select any image to enlarge it.</p>
+<h3 class="sub">Aerial</h3><div class="gal big" id="gal-aerial"></div>
+<h3 class="sub">Eye level · outside the campus</h3><div class="gal" id="gal-out"></div>
+<h3 class="sub">Eye level · inside the campus</h3><div class="gal" id="gal-in"></div>
+<h3 class="sub">Building interiors</h3><div class="gal" id="gal-int"></div>
+</section>
+
+<!-- ================= PHASING ================= -->
+<section id="phasing">
+<h2>10 · Phasing</h2>
+<div class="phases">
+<div class="phase"><div class="k">PHASE 0</div><h3>Control and ground</h3><p>Assemble ownership, complete Phase I/II environmental work, set the cleanup path, confirm zoning and open the CPP interconnect study.</p></div>
+<div class="phase"><div class="k">PHASE 1</div><h3>Power first, front door</h3><p>Power plant and interconnect, the Campus D food hall and training center, the first data hall on the north pad and the first manufacturing building.</p></div>
+<div class="phase"><div class="k">PHASE 2</div><h3>Scale the halls and the hydrogen</h3><p>The remaining data halls, the electrolyzer and storage, the second and third manufacturing buildings, and offices in Campus D.</p></div>
+<div class="phase"><div class="k">PHASE 3</div><h3>Build-out</h3><p>Final halls and yards, remaining manufacturing, parking and permanent landscaping.</p></div>
+</div>
+<h3 class="sub">Construction sequence <span class="flag">ILLUSTRATIVE</span></h3>
+<div class="gal" id="gal-con"></div>
+</section>
+
+<!-- ================= CALCULATOR ================= -->
+<section id="calculator">
+<h2>11 · Program calculator</h2>
+<p class="lead">A planning-level sketch tool from the earlier concept. It splits the parcel by that concept's zone shares (A 35.9%, B 8.6%, C 40.9%, D 14.6%) and applies planning ratios, so its results won't match the building schedule above. Change any value and everything recalculates.</p>
+<div class="calc">
+<div class="box">
+<h3>PARCEL + ASSUMPTIONS</h3>
+<label for="ac">Parcel acres <input id="ac" type="number" min="5" max="200" step="0.5" value="33.96"></label>
+<label for="a_cov">A · site coverage <input id="a_cov" type="number" step="0.05" value="0.40"></label>
+<label for="a_fl">A · floors <input id="a_fl" type="number" step="1" value="3"></label>
+<label for="a_w">A · facility load, W per gross sq ft <input id="a_w" type="number" step="10" value="200"></label>
+<label for="b_sh">B · share of zone for electrolyzer <input id="b_sh" type="number" step="0.05" value="0.50"></label>
+<label for="b_mw">B · electrolyzer MW per acre <input id="b_mw" type="number" step="1" value="12"></label>
+<label for="b_kwh">B · system kWh per kg H₂ <input id="b_kwh" type="number" step="1" value="52"></label>
+<label for="c_cov">C · coverage <input id="c_cov" type="number" step="0.05" value="0.40"></label>
+<label for="c_fl">C · floors <input id="c_fl" type="number" step="1" value="1"></label>
+<label for="c_w">C · load, W per sq ft <input id="c_w" type="number" step="5" value="25"></label>
+<label for="d_cov">D · coverage <input id="d_cov" type="number" step="0.05" value="0.25"></label>
+<label for="d_fl">D · floors <input id="d_fl" type="number" step="1" value="3"></label>
+<label for="d_w">D · load, W per sq ft <input id="d_w" type="number" step="1" value="6"></label>
+<label for="res">Supply reserve margin <input id="res" type="number" step="0.05" value="0.15"></label>
+</div>
+<div class="box">
+<h3>RESULTS</h3>
+<div class="tablewrap"><table aria-live="polite">
+<thead><tr><th>Campus</th><th class="n">Acres</th><th class="n">Gross sq ft</th><th class="n">Load MW</th></tr></thead>
+<tbody>
+<tr><td>A · Hyperscale</td><td class="n" id="r_Aa"></td><td class="n" id="r_As"></td><td class="n" id="r_Am"></td></tr>
+<tr><td>B · Hydrogen + power</td><td class="n" id="r_Ba"></td><td class="n">—</td><td class="n" id="r_Bm"></td></tr>
+<tr><td>C · Manufacturing</td><td class="n" id="r_Ca"></td><td class="n" id="r_Cs"></td><td class="n" id="r_Cm"></td></tr>
+<tr><td>D · Corporate park</td><td class="n" id="r_Da"></td><td class="n" id="r_Ds"></td><td class="n" id="r_Dm"></td></tr>
+<tr class="tot"><td>Campus total</td><td class="n" id="r_Ta"></td><td class="n" id="r_Ts"></td><td class="n" id="r_Tm"></td></tr>
+</tbody></table></div>
+<div class="tablewrap" style="margin-top:12px"><table>
+<tbody>
+<tr><td>Firm on-site supply with reserve</td><td class="n" id="o_sup"></td></tr>
+<tr><td>Hydrogen output at full electrolyzer load</td><td class="n" id="o_h2"></td></tr>
+<tr><td>Electrolyzer feed water (about 10 L per kg H₂)</td><td class="n" id="o_wat"></td></tr>
+<tr><td>Rough permanent jobs (A + C + D)</td><td class="n" id="o_job"></td></tr>
+</tbody></table></div>
+<p class="note">Jobs use planning ratios: A about 0.5 per MW, C about 0.9 per 1,000 sq ft, D about 3.5 per 1,000 sq ft. Replace them with tenant numbers once known. Data-hall cooling is closed-loop; the water figure is electrolysis only.</p>
+</div>
+</div>
+</section>
+
+<!-- ================= SITE FACTS ================= -->
+<section id="site">
+<h2>12 · Site facts + constraints</h2>
+<div class="two">
+<div class="box"><h3>FROM THE AERIAL</h3><ul class="list">
+<li>The north pad is bare, graded ground: the natural home for the large, repetitive data halls.</li>
+<li>The middle strip is open grass, wide and shallow, which suits long manufacturing buildings.</li>
+<li>The southwest wedge is open and irregular, close to the Kirby Ave / I-90 ramp side, which suits a public-facing corporate park.</li>
+<li>Rail corridors and I-90 lie to the northwest across Kirby Ave; E. 131st St. and another rail line lie to the east; Taft Ave and older industrial buildings lie to the south.</li>
+<li>No homes touch the parcel edge, so the 8 ft wall / pine buffer rule isn't triggered; the fence line is for security.</li>
+</ul></div>
+<div class="box"><h3>PUBLIC REPORTING TO VERIFY</h3><ul class="list">
+<li>The corner is former National Acme and Republic Steel ground. A county-commissioned consultant study called it a typical brownfield with a long industrial history; county council members called it workable to clean up.</li>
+<li>The county's environmental report was shared with the Bibb administration.</li>
+<li>County council members once floated the site for a new county jail. The jail is now being built in Garfield Heights, so that competing use no longer applies.</li>
+<li>A county official described the neighboring Eddy-Kirby site as having several owners; confirm the ownership of every piece inside the outline.</li>
+<li>Local reporting describes about 35 acres of industrial land at this corner; the image trace measures 33.96 acres.</li>
+</ul></div>
+</div>
+</section>
+
+<!-- ================= OPEN ITEMS ================= -->
+<section id="open">
+<h2>13 · Open items</h2>
+<ul class="list">
+<li><b>Parcel acreage and owners</b> from county records. They drive every number on this page; the geometry is an image trace (±3–5 m), not survey.</li>
+<li><b>Electric service:</b> confirm whether Cleveland Public Power or The Illuminating Company serves this corner, and where the nearest transmission-class interconnect sits.</li>
+<li><b>Power technology:</b> the earlier concept described KARNO power modules; the current layout assumes six 50 MW aeroderivative gas turbines. One needs to be chosen.</li>
+<li><b>Heat recovery:</b> the HRSGs and the reclaimed-heat pipe rack are proposed here, not in the source data. Decide CHP versus full combined cycle.</li>
+<li><b>Campus D placement:</b> the earlier concept puts the corporate park in the southwest wedge, where the current layout has Manufacturing Building C (MFG-3). Which use takes the wedge, or where the other moves, is still open.</li>
+<li><b>Hydrogen separation distances</b> and storage limits under the fire code and NFPA 2, set with the fire marshal.</li>
+<li><b>Zoning</b> and any use restrictions tied to the cleanup, including how a data center, hydrogen production and manufacturing fit together.</li>
+<li><b>Anchor tenants</b> for Campuses A and C, which set real hall sizes, power density and the manufacturing mix.</li>
+<li><b>Off-site agreements:</b> the Cleveland Short Line connection (railroad agreement, easement, at-grade crossing of E. 131st St.) and the Taft Ave road connector (easement or acquisition).</li>
+<li><b>Noise:</b> mechanical yards face Kirby Ave and the rail corridor, away from the neighborhoods; a noise study is still needed.</li>
+<li><b>Security design:</b> gate roles (G2 main, G1 power + hydrogen service, G3 employees, G4 logistics) and checkpoint details are proposals for review.</li>
+</ul>
+</section>
+
+<!-- ================= SOURCES ================= -->
+<section id="about">
+<h2>14 · About this concept</h2>
+<div class="two">
+<div class="box"><h3>HOW IT WAS MADE</h3><ul class="list">
+<li>The parcel outline and every building, road, rail and utility line were traced from aerial imagery and matched to public street centerlines. Positions are approximate (about ±3–5 m) and are not a survey.</li>
+<li>Sizes, capacities and outputs are planning-level assumptions, not engineering, permitting or tenant commitments.</li>
+<li>Renderings are AI-generated illustrations (Adobe Firefly), guided by drawings of the concept layout. They show character and lighting only.</li>
+</ul></div>
+<div class="box"><h3>CONCEPTUAL INFORMATION ONLY</h3><ul class="list">
+<li>This concept is shared to support community discussion about what the site could become.</li>
+<li>It does not represent the plans or commitments of any property owner, public agency, utility or company.</li>
+<li>Everything on this page may change as ownership, environmental, zoning, utility and community input are worked through.</li>
+</ul></div>
+</div>
+</section>
+
+</div>
+
+<footer><div class="wrap">
+<img src="img/fos216-logo.png" alt="">
+<div><b style="color:var(--ink)">The FixOurStreets216 Project</b> · Neighborhoods First · #WeThePeople<br>fixourstreets216.com · Conceptual information only · Not a proposal, approval or engineered design · October 2026</div>
+</div></footer>
+
+<dialog id="lb" aria-label="Image viewer">
+<img id="lb-img" alt="">
+<div class="bar"><div><b id="lb-title"></b><br><span>Conceptual illustration only</span></div><button type="button" id="lb-close">Close</button></div>
+</dialog>
+
+<script>
+// ---------- image catalogue: [web image, title, caption] ----------
+const PLANS = [
+ ['mp-mp-01-labeled-master-plan.jpg', 'MP-01 · Labeled master plan', 'All systems with building, gate and system labels'],
+ ['mp-mp-05-combined-final-annotated.jpg', 'MP-05 · Combined final, annotated', 'Massing over every network, fully labeled'],
+ ['mp-mp-02-massing-only.jpg', 'MP-02 · Massing only', 'Extruded buildings, rooftop mechanical, building schedule'],
+ ['mp-mp-03-utilities-only.jpg', 'MP-03 · Utilities only', 'Power, hydrogen, water and chilled-water corridors'],
+ ['mp-mp-04-fiber-only.jpg', 'MP-04 · Fiber only', 'Counter-rotating dual ring, laterals, carrier entrances'],
+ ['mp-mp-06-labels-legend-only.jpg', 'MP-06 · Labels + legend only', 'Annotation set over a muted base'],
+ ['mp-mp-01-full-master-plan.jpg', 'MP-01 · Full master plan (earlier issue)', 'Before the labeling pass'],
+ ['mp-mp-05-combined-final-campus.jpg', 'MP-05 · Combined final (earlier issue)', 'Before the labeling pass']
+];
+const HRSG = [
+ ['aerial-aerial-combined-heat-and-power-plant-at-night.jpg', 'Combined heat and power plant at night', 'Six HRSGs and stacks behind the turbine hall']
+];
+const AERIAL = [
+ ['aerial-aerial-cinematic-view-12610-e-131st-collinwood-cleveland-ohio.jpg', 'Aerial cinematic view', 'Golden hour, full campus'],
+ ['aerial-aerial-cinematic-view-12610-e-131st-collinwood-cleveland-ohio-01.jpg', 'Aerial cinematic view · variant', 'Golden hour, full campus'],
+ ['aerial-aerial-cinematic-view-with-hrsgs-assumed.jpg', 'Aerial with HRSGs', 'Combined heat and power layout (assumed)'],
+ ['aerial-nighttime-lighting-12610-e-131st-collinwood-cleveland-ohio.jpg', 'Nighttime lighting', 'Blue hour, lit floor bands and campus roads'],
+ ['aerial-power-campus-industrial-lighting-12610-e-131st-collinwood-cleveland-ohio.jpg', 'Power campus industrial lighting', 'Switchyard, turbine stacks, battery storage'],
+ ['aerial-hydrogen-campus-lighting-12610-e-131st-collinwood-cleveland-ohio.jpg', 'Hydrogen campus lighting', 'Electrolyzer, compression, storage yard'],
+ ['aerial-green-infrastructure-overlay-12610-e-131st-collinwood-cleveland-ohio.jpg', 'Green infrastructure overlay', 'Green roofs, bioswales, meadow buffers, greenway']
+];
+const OUT = [
+ ['eye-outside-kirby-ave-street-view.jpg', 'Kirby Ave street view', 'Data halls behind the fence and landscape buffer'],
+ ['eye-outside-e-131st-st-at-dusk.jpg', 'E. 131st St. at dusk', 'Turbine stacks, switchyard, main gate'],
+ ['eye-outside-hrsg-row-from-e-131st-st.jpg', 'HRSG row from E. 131st St.', 'Heat recovery units and stacks (assumed)']
+];
+const IN = [
+ ['eye-inside-campus-spine-looking-west.jpg', 'Campus spine, looking west', 'Manufacturing left, power and hydrogen right'],
+ ['eye-inside-data-hall-service-road.jpg', 'Data hall service road', 'Hyperscale Building A and the electrolyzer hall'],
+ ['eye-inside-rail-dock-apron.jpg', 'Rail dock apron', 'Train loading at Manufacturing A and B'],
+ ['eye-inside-rail-dock-apron-01.jpg', 'Rail dock apron · variant', 'Train loading at Manufacturing A and B'],
+ ['eye-inside-power-hydrogen-road-at-night.jpg', 'Power + hydrogen road at night', 'Electrolyzer, battery storage, fin-fan coolers'],
+ ['eye-inside-west-gate-road.jpg', 'West gate road', 'Tree-lined road between Hyperscale C and Manufacturing C'],
+ ['eye-inside-hrsg-row-from-the-rail-yard-edge.jpg', 'HRSG row from the rail yard', 'Heat recovery units (assumed)']
+];
+const INT = [
+ ['eye-interior-hyperscale-data-hall.jpg', 'Hyperscale data hall', 'Contained aisles, overhead busway'],
+ ['eye-interior-advanced-manufacturing-floor.jpg', 'Advanced manufacturing floor', 'Switchgear and modular data-center assembly'],
+ ['eye-interior-turbine-hall.jpg', 'Turbine hall', 'Six aeroderivative turbine packages'],
+ ['eye-interior-turbine-hall-with-hrsg-connections.jpg', 'Turbine hall with HRSG connections', 'Exhaust ducts to the heat recovery units'],
+ ['eye-interior-electrolyzer-hall.jpg', 'Electrolyzer hall', 'PEM stacks and process piping'],
+ ['eye-interior-absorption-chiller-plant.jpg', 'Absorption chiller plant', 'Recovered heat drives data-hall cooling'],
+ ['eye-interior-security-operations-center.jpg', 'Security operations center', 'Gate, fence-line and plate-reader feeds'],
+ ['eye-alternative-combined-cycle-steam-turbine-hall.jpg', 'Alternative · steam turbine hall', 'Only if the plant goes full combined cycle']
+];
+const CON = [
+ ['aerial-construction-phase-1-12610-e-131st-collinwood-cleveland-ohio.jpg', 'Construction · Phase 1', 'Site graded; foundations for Hyperscale A, Manufacturing A and the turbine hall'],
+ ['aerial-construction-phase-2-12610-e-131st-collinwood-cleveland-ohio.jpg', 'Construction · Phase 2', 'Hyperscale A topped out; turbine hall and Manufacturing A enclosed'],
+ ['aerial-construction-phase-3-12610-e-131st-collinwood-cleveland-ohio.jpg', 'Construction · Phase 3', 'Halls enclosed, electrolyzer underway, landscaping']
+];
+const GATES = [
+ ['G2', 'Main entrance · E. 131st St.', 'Visitors, staff and inbound trucks · campus spine · fiber carrier entrance 2',
+  ['eye-gate-g2-main-entrance-e-131st-st-approach.jpg', 'Approach', 'From the far side of E. 131st St.'],
+  ['eye-gate-g2-main-entrance-staffed.jpg', 'Staffed', 'Officer checks a truck driver’s credentials']],
+ ['G1', 'Power + hydrogen service · Coit Rd', 'Utility crews, deliveries and emergency access · fiber carrier entrance 1',
+  ['eye-gate-g1-power-hydrogen-service-coit-rd-approach.jpg', 'Approach', 'From across Coit Rd'],
+  ['eye-gate-g1-power-hydrogen-service-staffed.jpg', 'Staffed', 'Work order and hydrogen safety permit check']],
+ ['G3', 'Employee entrance · Kirby Ave', 'Staff cars and pedestrians · west connector',
+  ['eye-gate-g3-employee-entrance-kirby-ave-approach.jpg', 'Approach', 'From the Kirby Ave sidewalk'],
+  ['eye-gate-g3-employee-entrance-staffed.jpg', 'Staffed', 'Badge scan at the car window']],
+ ['G4', 'Logistics gate · Taft Ave connector', 'Secondary truck and emergency access · off-site connector needs an easement',
+  ['eye-gate-g4-logistics-gate-taft-ave-connector-approach.jpg', 'Approach', 'Coming north from Taft Ave'],
+  ['eye-gate-g4-logistics-gate-staffed-night.jpg', 'Staffed, night', 'Flatbed load and paperwork inspection']]
+];
+
+// ---------- render galleries ----------
+const esc = s => s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;');
+const fig = ([img, title, cap]) => `<figure><button type="button" data-open="img/${img}" data-title="${esc(title)}"><img src="img/${img}" alt="${esc(title + ': ' + cap)}" loading="lazy"></button><figcaption><b>${esc(title)}</b><span>${esc(cap)}</span></figcaption></figure>`;
+const fill = (id, list) => { document.getElementById(id).innerHTML = list.map(fig).join(''); };
+fill('gal-plans', PLANS); fill('gal-hrsg', HRSG); fill('gal-aerial', AERIAL); fill('gal-out', OUT); fill('gal-in', IN); fill('gal-int', INT); fill('gal-con', CON);
+document.getElementById('gates').innerHTML = GATES.map(([id, name, role, a, s]) =>
+  `<div class="gate-h"><b>${id}</b><h3 style="margin:0;font-size:19px">${esc(name)}</h3><span>${esc(role)}</span></div><div class="gate gal">${fig(a)}${fig(s)}</div>`).join('');
+
+// ---------- job creation: [position, jobs, pay low, pay high, 'hr' | 'yr', schedule] ----------
+const JOBS = [
+ {g:'Hyperscale data campus', c:'var(--hs)', d:'3 data halls · 1.2M sf', rows:[
+  ['Data center site director',1,185000,230000,'yr','Day + on-call'],
+  ['Critical facilities managers (one per hall)',3,130000,160000,'yr','Day + on-call'],
+  ['Critical facilities shift leads',5,50,62,'hr','24/7'],
+  ['Critical facilities technicians (electrical / mechanical)',25,38,52,'hr','24/7'],
+  ['Industrial electricians',6,36,46,'hr','Day + on-call'],
+  ['HVAC + controls technicians',6,33,44,'hr','Day + on-call'],
+  ['Data center technicians (hardware, remote hands)',18,25,36,'hr','24/7'],
+  ['Network + NOC engineers (fiber rings)',7,95000,140000,'yr','24/7'],
+  ['Shipping, receiving + inventory',6,20,25,'hr','2 shifts'],
+  ['Capacity + energy planners',2,100000,130000,'yr','Day'],
+  ['Fit-out project managers',3,110000,150000,'yr','Day'],
+  ['Environmental, health + safety specialist',1,80000,100000,'yr','Day'],
+  ['Site administrators',2,22,28,'hr','Day']]},
+ {g:'Advanced manufacturing', c:'var(--mfg)', d:'3 buildings · 855,000 sf · three shifts',rows:[
+  ['Site general manager',1,170000,210000,'yr','Day'],
+  ['Plant managers (one per building)',3,130000,165000,'yr','Day'],
+  ['Production supervisors',24,75000,95000,'yr','24/7'],
+  ['Electrical + mechanical assemblers',300,20,27,'hr','24/7'],
+  ['Panel builders + electrical wiremen',90,25,34,'hr','24/7'],
+  ['Welders + fabricators',50,24,32,'hr','24/7'],
+  ['CNC + machine operators',40,22,30,'hr','24/7'],
+  ['Test technicians (switchgear, skids, IT modules, electrolyzer stacks)',40,28,38,'hr','24/7'],
+  ['Quality inspectors',25,24,32,'hr','24/7'],
+  ['Quality engineers',6,85000,110000,'yr','Day'],
+  ['Manufacturing + industrial engineers',15,85000,120000,'yr','Day'],
+  ['Electrical engineers',12,95000,130000,'yr','Day'],
+  ['Maintenance technicians',24,30,40,'hr','24/7'],
+  ['Material handlers + forklift operators',50,19,24,'hr','24/7'],
+  ['Shipping + logistics coordinators',12,21,27,'hr','24/7'],
+  ['Planners, buyers + supply chain',12,65000,90000,'yr','Day'],
+  ['Environmental, health + safety specialists',4,75000,100000,'yr','Day + shifts'],
+  ['HR + plant administration',10,50000,75000,'yr','Day']]},
+ {g:'Power plant · 300 MW + battery storage', c:'var(--tur)', d:'Turbines, heat recovery, switchyard, BESS',rows:[
+  ['Plant manager',1,150000,185000,'yr','Day + on-call'],
+  ['Operations manager',1,125000,150000,'yr','Day + on-call'],
+  ['Shift supervisors',5,115000,140000,'yr','24/7'],
+  ['Control room operators',9,45,58,'hr','24/7'],
+  ['Field operators (turbines, HRSG, chillers)',9,36,46,'hr','24/7'],
+  ['Instrumentation + controls technicians',4,40,52,'hr','Day + on-call'],
+  ['Electrical technicians (switchyard, BESS)',4,40,52,'hr','Day + on-call'],
+  ['Mechanical technicians (turbines, HRSG)',5,38,48,'hr','Day + on-call'],
+  ['Battery storage technicians',2,34,44,'hr','Day + on-call'],
+  ['Plant + performance engineers',2,100000,135000,'yr','Day'],
+  ['Water chemistry technicians',2,32,42,'hr','Day'],
+  ['Environmental compliance specialist',1,85000,110000,'yr','Day'],
+  ['Warehouse + plant administration',2,22,28,'hr','Day']]},
+ {g:'Hydrogen production', c:'var(--elz)', d:'16 MW electrolysis · 7,385 kg/day',rows:[
+  ['Hydrogen plant manager',1,130000,160000,'yr','Day + on-call'],
+  ['Shift leads',4,45,55,'hr','24/7'],
+  ['Process operators',9,34,45,'hr','24/7'],
+  ['Maintenance + controls technicians',4,36,48,'hr','Day + on-call'],
+  ['Process / chemical engineers',2,95000,125000,'yr','Day'],
+  ['Tube-trailer fill technicians + hazmat CDL drivers',6,26,34,'hr','24/7'],
+  ['Process safety specialist',1,90000,115000,'yr','Day'],
+  ['Water treatment + lab technicians',2,28,36,'hr','Day']]},
+ {g:'Rail + logistics', c:'var(--gold)', d:'Transload yard, rail dock, truck dispatch',rows:[
+  ['Logistics manager',1,90000,115000,'yr','Day + on-call'],
+  ['Rail switching crew (conductors, switchmen)',8,28,36,'hr','24/7'],
+  ['Crane + reach-stacker operators',8,30,40,'hr','24/7'],
+  ['Truck dispatchers',4,22,29,'hr','24/7'],
+  ['Yard jockey + CDL drivers',8,24,32,'hr','24/7'],
+  ['Material handlers',12,19,24,'hr','24/7']]},
+ {g:'Security', c:'var(--orange)', d:'4 staffed gates, operations center, patrol',rows:[
+  ['Director of security',1,115000,145000,'yr','Day + on-call'],
+  ['Security shift supervisors',5,60000,75000,'yr','24/7'],
+  ['Gate officers (G1–G4, 5 posts)',21,20,26,'hr','24/7'],
+  ['Security operations center operators',9,22,29,'hr','24/7'],
+  ['Mobile patrol officers',9,20,26,'hr','24/7'],
+  ['Security systems technicians',2,30,40,'hr','Day + on-call'],
+  ['Badging + visitor coordinators',2,19,23,'hr','2 shifts']]},
+ {g:'Campus operations + shared services', c:'var(--teal2)', d:'Facilities, emergency response, health, admin',rows:[
+  ['Campus general manager',1,170000,210000,'yr','Day + on-call'],
+  ['Campus facilities manager',1,100000,125000,'yr','Day + on-call'],
+  ['Building engineers',5,32,42,'hr','24/7'],
+  ['Industrial emergency response + fire technicians',9,27,36,'hr','24/7'],
+  ['Occupational health nurses',2,40,50,'hr','2 shifts'],
+  ['Environmental, health + safety manager',1,110000,135000,'yr','Day'],
+  ['Custodial staff',30,16,19,'hr','24/7'],
+  ['Grounds + green infrastructure crew',8,17,22,'hr','Day'],
+  ['Corporate IT staff',6,70000,110000,'yr','Day + on-call'],
+  ['HR, payroll, finance + procurement',12,60000,95000,'yr','Day'],
+  ['Fleet mechanics',2,26,34,'hr','Day'],
+  ['Community liaison + workforce coordinators',2,60000,80000,'yr','Day']]},
+ {g:'Workforce hub + food hall (Campus D)', c:'var(--pwr)', d:'Training center and 5,000 sf food hall',rows:[
+  ['Training center director',1,90000,115000,'yr','Day'],
+  ['Instructors (electrical, mechanical, data center, hydrogen safety, welding, CDL)',12,75000,95000,'yr','Day + evening'],
+  ['Apprenticeship + career coordinators',4,55000,70000,'yr','Day'],
+  ['Food hall managers',2,55000,70000,'yr','2 shifts'],
+  ['Cooks',18,17,22,'hr','24/7'],
+  ['Food service workers + cashiers',24,15,18,'hr','24/7']]}
+];
+(function(){
+  const money = v => v >= 1000 ? '$' + Math.round(v/1000) + 'k' : '$' + v;
+  const pay = r => r[4] === 'hr' ? `$${r[2]}–$${r[3]}/hr` : `${money(r[2])}–${money(r[3])}/yr`;
+  const annual = r => (r[2] + r[3]) / 2 * (r[4] === 'hr' ? 2080 : 1);
+  let total = 0, round = 0, payroll = 0;
+  const html = JOBS.map(grp => {
+    const n = grp.rows.reduce((s, r) => s + r[1], 0);
+    const p = grp.rows.reduce((s, r) => s + r[1]*annual(r), 0);
+    total += n; payroll += p; round += grp.rows.filter(r => r[5] === '24/7').reduce((s, r) => s + r[1], 0);
+    return `<h3 class="sub"><span class="sw" style="--c:${grp.c}"></span>${esc(grp.g)} · ${n.toLocaleString('en-US')} jobs <span style="color:var(--mut);text-transform:none;letter-spacing:0">· ${esc(grp.d)}</span></h3>
+<div class="tablewrap"><table><thead><tr><th>Position</th><th class="n">Jobs</th><th class="n">Approx. pay</th><th>Schedule</th></tr></thead><tbody>`
+      + grp.rows.map(r => `<tr><td>${esc(r[0])}</td><td class="n">${r[1]}</td><td class="n">${pay(r)}</td><td style="white-space:nowrap">${r[5] === '24/7' ? '<b style="color:var(--orange2)">24/7</b>' : esc(r[5])}</td></tr>`).join('')
+      + `<tr class="tot"><td>Subtotal</td><td class="n">${n}</td><td class="n">≈ $${(p/1e6).toFixed(1)}M payroll</td><td></td></tr></tbody></table></div>`;
+  }).join('');
+  const campusD = JOBS[JOBS.length-1].rows.reduce((s, r) => s + r[1], 0);
+  document.getElementById('jobs-tables').innerHTML = html
+    + `<div class="tablewrap" style="margin-top:18px"><table><tbody><tr class="tot"><td>Total permanent jobs</td><td class="n">${total.toLocaleString('en-US')}</td></tr><tr><td>Without the Campus D workforce hub and food hall</td><td class="n">${(total-campusD).toLocaleString('en-US')}</td></tr><tr><td>Estimated annual payroll (base pay, range midpoints)</td><td class="n">≈ $${(payroll/1e6).toFixed(0)}M</td></tr></tbody></table></div>`;
+  document.getElementById('jobs-kpis').innerHTML =
+    `<div class="kpi"><b>${total.toLocaleString('en-US')}</b><span>TOTAL PERMANENT JOBS</span></div>`
+    + `<div class="kpi"><b>${round.toLocaleString('en-US')}</b><span>IN ROUND-THE-CLOCK SHIFT ROLES</span></div>`
+    + `<div class="kpi"><b>≈ $${(payroll/1e6).toFixed(0)}M</b><span>ANNUAL PAYROLL · BASE PAY</span></div>`
+    + `<div class="kpi"><b>≈ $${Math.round(payroll/total/1000)}k</b><span>AVERAGE BASE PAY PER JOB</span></div>`;
+})();
+
+// ---------- lightbox ----------
+const lb = document.getElementById('lb');
+function openLb(src, title){
+  document.getElementById('lb-img').src = src;
+  document.getElementById('lb-img').alt = title;
+  document.getElementById('lb-title').textContent = title;
+  lb.showModal();
+}
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-open]');
+  if (b) openLb(b.dataset.open, b.dataset.title);
+});
+document.querySelector('.hero img').addEventListener('click', e => openLb(e.target.src, e.target.dataset.title));
+document.getElementById('lb-close').addEventListener('click', () => lb.close());
+lb.addEventListener('click', e => { if (e.target === lb) lb.close(); });
+
+// ---------- program calculator (from the earlier concept) ----------
+(function(){
+  const FR = {A:0.3586, B:0.0864, C:0.4091, D:0.1459}, SF = 43560;
+  const $ = i => document.getElementById(i);
+  const f0 = x => Math.round(x).toLocaleString('en-US');
+  const f1 = x => (Math.round(x*10)/10).toLocaleString('en-US', {minimumFractionDigits:1});
+  const v = i => parseFloat($(i).value) || 0;
+  function calc(){
+    const ac = v('ac');
+    const a = {A:ac*FR.A, B:ac*FR.B, C:ac*FR.C, D:ac*FR.D};
+    const As = a.A*SF*v('a_cov')*v('a_fl'), Am = As*v('a_w')/1e6;
+    const elMW = a.B*v('b_sh')*v('b_mw');
+    const Cs = a.C*SF*v('c_cov')*v('c_fl'), Cm = Cs*v('c_w')/1e6;
+    const Ds = a.D*SF*v('d_cov')*v('d_fl'), Dm = Ds*v('d_w')/1e6;
+    const tot = Am + elMW + Cm + Dm, kg = v('b_kwh') ? elMW*1000*24/v('b_kwh') : 0;
+    const set = (i, t) => { $(i).textContent = t; };
+    set('r_Aa', f1(a.A)); set('r_Ba', f1(a.B)); set('r_Ca', f1(a.C)); set('r_Da', f1(a.D)); set('r_Ta', f1(ac));
+    set('r_As', f0(As)); set('r_Cs', f0(Cs)); set('r_Ds', f0(Ds)); set('r_Ts', f0(As+Cs+Ds));
+    set('r_Am', f1(Am)); set('r_Bm', f1(elMW)); set('r_Cm', f1(Cm)); set('r_Dm', f1(Dm)); set('r_Tm', f1(tot));
+    set('o_sup', f1(tot*(1+v('res'))) + ' MW');
+    set('o_h2', f0(kg) + ' kg/day');
+    set('o_wat', f0(kg*10*0.264172) + ' gal/day');
+    set('o_job', f0(Am*0.5 + Cs/1000*0.9 + Ds/1000*3.5) + ' jobs');
+  }
+  document.querySelectorAll('.calc input').forEach(i => i.addEventListener('input', calc));
+  calc();
+})();
+</script>
+</body>
+</html>
